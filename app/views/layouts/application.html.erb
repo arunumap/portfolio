@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href='http://fonts.googleapis.com/css?family=Alegreya+Sans+SC|Marcellus+SC|Overlock|Russo+One|Carrois+Gothic+SC|Sintony|Exo+2|Varela|Six+Caps|Basic|Yanone+Kaffeesatz' rel='stylesheet' type='text/css'>
+   <link href='http://fonts.googleapis.com/css?family=Syncopate:700|Quicksand:700|Paytone+One|Anton|Exo|Yanone+Kaffeesatz:400,700|Montserrat:400,700|Oxygen:400,700|Play:400,700|Titillium+Web:400,900|Cuprum' rel='stylesheet' type='text/css'>
+
+    <title><%= content_for?(:title) ? yield(:title) : "foundation-rails" %></title>
+
+    <%= stylesheet_link_tag    "application" %>
+    <%= javascript_include_tag "vendor/modernizr" %>
+    <%= csrf_meta_tags %>
+  </head>
+
+  <body>
+  <div data-magellan-expedition="fixed">
+    <dl class="sub-nav">
+      <dd data-magellan-arrival="build"><a href="#build">Build with HTML</a></dd>
+      <dd data-magellan-arrival="js"><a href="#js">Arrival 2</a></dd>
+    </dl>
+  </div>
+
+    <%= yield %>
+    <%= javascript_include_tag "application" %>
+  </body>
+</html>
