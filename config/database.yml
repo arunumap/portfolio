@@ -21,6 +21,6 @@ production:
   encoding: unicode
   database: me_production
   pool: 5
-  username: postgres
-  password: postgres
-  host: localhost
+  username: 
+  password: 
+
