@@ -11,7 +11,12 @@
 	<a name="portfolio"></a>
 <div class="second" data-magellan-destination="portfolio">
 	<div class="portfolioheader">
-		<p style="font-size: 30px;"> My Portfolio</p>
+		<ul>
+			<li class="portfoliolink"><span style="font-size: 30px;"> My Portfolio</span></li>
+			<li class="portfoliolink"><a href="#" data-reveal-id="Moolah">Moolah</a></li>
+			<li class="portfoliolink"><a href="#" data-reveal-id="pfitmd">PfitMD</a></li>
+			<li class="portfoliolink"><a href="#" data-reveal-id="flickrec">Flickrec</a></li>
+		</ul>
 	</div>
 	<div class="orbitportfolio">
 		<ul data-orbit>
@@ -34,5 +39,64 @@
     		</div>
   		</li>
 		</ul>
+	</div>
+</div>
+
+<!-- Modals -->
+<!-- Moolah Modal -->
+<div id="Moolah" class="reveal-modal" data-reveal>
+	<div class="modalpopup">
+  	<h2>Moolah</h2>
+  	<hr />
+  	<img src="<%= asset_path "moolah.png" %>" class="modalimage">
+  	<div>
+  		<span>Moolah is a Social Savings app whereby you and a group of your friends can save money together for a common goal, say a trip.</span>
+  	
+  		<ul>
+  			<li style="display: inline;"><h4>Technology</h4><span>Ruby on Rails, Javascript, HTML/CSS, Postgresql</span></li>
+  			<li style="display: inline;"><h4>Features</h4><span>Friending, Login with Facebook, Newsfeeds, Gamification, Achievements, Goals</span></li>
+  			<li style="list-style-type: none;"><a href="http://save-moolah.herokuapp.com">Visit Site</a></li> 
+  		</ul>
+  	</div>
+  	<a class="close-reveal-modal">&#215;</a>
+	</div>
+</div>
+
+<!-- PfitMD Modal -->
+<div id="pfitmd" class="reveal-modal" data-reveal>
+	<div class="modalpopup">
+  	<h2>PfitMD</h2>
+  	<hr />
+  	<img src="<%= asset_path "pfitmd.png" %>" class="modalimage">
+  	<div>
+  		<span>PfitMD is an app that allows professionals, such as nutritionists, personal trainers, and physicians to be able to access your fitness tracker and develop strategies to improve care/quality of service</span>
+  	
+  		<ul>
+  			<li style="display: inline;"><h4>Technology</h4><span>Ruby on Rails, Javascript, HTML/CSS, Postgresql</span></li>
+  			<li style="display: inline;"><h4>Features</h4><span>Admin access, User access, Login with personal tracker, more features to come</span></li>
+  			<li style="list-style-type: none;"><span>Still in development</span></li>
+  			<li style="list-style-type: none;"><a href="http://pfitmd.herokuapp.com">Visit Prototype</a></li> 
+  		</ul>
+  	</div>
+  	<a class="close-reveal-modal">&#215;</a>
+	</div>
+</div>
+
+<!-- Flickrec Modal -->
+<div id="flickrec" class="reveal-modal" data-reveal>
+	<div class="modalpopup">
+  	<h2>Flickrec</h2>
+  	<hr />
+  	<img src="<%= asset_path "flickrec.png" %>" class="modalimage">
+  	<div>
+  		<span>Flickrec is a movie ratings app that creates a score (flickrec score) by scanning Twitter to get a sense of the publics sentiment on particular films in theaters</span>
+  	
+  		<ul>
+  			<li style="display: inline;"><h4>Technology</h4><span>Ruby on Rails, Javascript, HTML/CSS, Postgresql, Twitter</span></li>
+  			<li style="display: inline;"><h4>Features</h4><span>Observe movie title's in theater and view flickrec score.</span></li>
+  			<li style="list-style-type: none;"><a href="http://floating-lake-2893.herokuapp.com/">Visit Site</a></li> 
+  		</ul>
+  	</div>
+  	<a class="close-reveal-modal">&#215;</a>
 	</div>
 </div>
