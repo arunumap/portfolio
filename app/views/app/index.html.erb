@@ -1,12 +1,38 @@
-<div class="first">
+<a name="home"></a>
+<div class="first" data-magellan-destination="home">
 	<div class="name">
 		<p style="font-size: 60px;">ARUN UMAPATHY</p>
-		<p class="subtext">Full-Stack Web Developer + Entrepreneur + DIY'er </p>
+		<p class="subtext">Full-Stack Web Developer + Entrepreneur + DIYer</p>
 	</div>
 	<div class="arunimage">	
 		<%= image_tag "arunhome.png" %>
 	</div>
 </div>
-<div class="second">
-	
+	<a name="portfolio"></a>
+<div class="second" data-magellan-destination="portfolio">
+	<div class="portfolioheader">
+		<p style="font-size: 30px;"> My Portfolio</p>
+	</div>
+	<div class="orbitportfolio">
+		<ul data-orbit>
+  		<li>
+    		<img src="<%= asset_path "pfitmd.png" %>" alt="PFITMD" />
+    		<div class="orbit-caption">
+      		Caption One.
+    		</div>
+  		</li>
+  		<li>
+    		<img src="<%= asset_path "moolah.png" %>" alt="Moolah" />
+    		<div class="orbit-caption">
+      		Caption Two.
+    		</div>
+  		</li>
+  		<li>
+    		<img src="<%= asset_path "flickrec.png" %>" alt="Flickrec" />
+    		<div class="orbit-caption">
+      		Caption Three.
+    		</div>
+  		</li>
+		</ul>
+	</div>
 </div>

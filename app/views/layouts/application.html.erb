@@ -6,7 +6,7 @@
     <link href='http://fonts.googleapis.com/css?family=Alegreya+Sans+SC|Marcellus+SC|Overlock|Russo+One|Carrois+Gothic+SC|Sintony|Exo+2|Varela|Six+Caps|Basic|Yanone+Kaffeesatz' rel='stylesheet' type='text/css'>
    <link href='http://fonts.googleapis.com/css?family=Syncopate:700|Quicksand:700|Paytone+One|Anton|Exo|Yanone+Kaffeesatz:400,700|Montserrat:400,700|Oxygen:400,700|Play:400,700|Titillium+Web:400,900|Cuprum' rel='stylesheet' type='text/css'>
 
-    <title><%= content_for?(:title) ? yield(:title) : "foundation-rails" %></title>
+    <title><%= content_for?(:title) ? yield(:title) : "Arun Umapathy" %></title>
 
     <%= stylesheet_link_tag    "application" %>
     <%= javascript_include_tag "vendor/modernizr" %>
@@ -16,9 +16,19 @@
   <body>
   <div data-magellan-expedition="fixed">
     <dl class="sub-nav">
-      <dd data-magellan-arrival="build"><a href="#build">Build with HTML</a></dd>
-      <dd data-magellan-arrival="js"><a href="#js">Arrival 2</a></dd>
+      <dd data-magellan-arrival="home"><a href="#home">Home</a></dd>
+      <dd data-magellan-arrival="portfolio"><a href="#portfolio">Portfolio</a></dd>
+      <div class="socialicon">
+        <a href="http://twitter.com/arunumap"><img src="<%= asset_path "twitter.png" %>" width="29px"></a>
+      </div>
+      <div class="socialicon" style="background-color: white, border-radius: 10px;">
+        <a href="http://github.com/arunumap"><img src="<%= asset_path "Githubblue.png" %>" width="29px"></a>
+      </div>
+      <div class="socialicon">
+        <a href="http://linkedin.com/in/arunumapathy"><img src="<%= asset_path "linkedin.png" %>" width="29px"></a>
+      </div>
     </dl>
+    
   </div>
 
     <%= yield %>
