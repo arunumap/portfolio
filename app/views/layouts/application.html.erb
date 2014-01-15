@@ -14,23 +14,34 @@
   </head>
 
   <body>
-  <div data-magellan-expedition="fixed">
-    <dl class="sub-nav">
-      <dd data-magellan-arrival="home"><a href="#home">Home</a></dd>
-      <dd data-magellan-arrival="portfolio"><a href="#portfolio">Portfolio</a></dd>
+<div class="fixed">
+<nav class="top-bar" data-topbar>
+  <section class="top-bar-section">
+    <!-- Right Nav Section -->
+    <ul class="right">
+      <div class="socialcontainer">
       <div class="socialicon">
         <a href="http://twitter.com/arunumap"><img src="<%= asset_path "twitter.png" %>" width="29px"></a>
       </div>
-      <div class="socialicon" style="background-color: white, border-radius: 10px;">
+       <div class="socialicon">
         <a href="http://github.com/arunumap"><img src="<%= asset_path "Githubblue.png" %>" width="29px"></a>
       </div>
       <div class="socialicon">
         <a href="http://linkedin.com/in/arunumapathy"><img src="<%= asset_path "linkedin.png" %>" width="29px"></a>
       </div>
-    </dl>
-    
-  </div>
+    </div>
 
+    </ul>
+
+    <!-- Left Nav Section -->
+    <ul class="left">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#portfolio">Portfolio</a></li>
+      <li><a href="https://dl.dropboxusercontent.com/u/23639721/Arun_Umapathy_Resume.pdf">My Resume</a></li>
+    </ul>
+  </section>
+</nav>
+</div>
     <%= yield %>
     <%= javascript_include_tag "application" %>
   </body>
