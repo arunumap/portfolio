@@ -1,7 +1,7 @@
 # config valid only for Capistrano 3.1
 lock '3.1.0'
 
-set :application, 'my_app_name'
+set :application, 'portfolio'
 set :repo_url, 'https://github.com/arunumap/portfolio.git'
 set :branch, 'master'
 
@@ -9,7 +9,7 @@ set :branch, 'master'
 # ask :branch, proc { `git rev-parse --abbrev-ref HEAD`.chomp }
 
 # Default deploy_to directory is /var/www/my_app
-set :deploy_to, '/home/railsapps/public_html/portfolio'
+set :deploy_to, '/home/railapps/public_html/portfolio'
 
 # Default value for :scm is :git
 # set :scm, :git
