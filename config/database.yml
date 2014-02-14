@@ -17,10 +17,8 @@ test:
   host: localhost
 
 production:
-  adapter: postgresql
-  encoding: unicode
-  database: me_production
-  pool: 5
-  username: 
-  password: 
+  adapter: mysql
+  database: portfolio
+  username: railapps
+  password: 123
 
