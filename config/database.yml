@@ -19,6 +19,6 @@ test:
 production:
   adapter: mysql
   database: portfolio
-  username: railapps
+  username: railsapps
   password: 123
 
